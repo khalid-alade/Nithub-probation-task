@@ -1,0 +1,11 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+
+  --tw-gradient-stops: #3730A3, #312E81;
+  --muted: hsl(0, 0%, 100%, 0.6);
+  --primary: #3730A3;
+  --primary-muted: #EEF2FF;
+  --secondary: #4B5563;
+  --secondary-muted: #F3F4F6;
+}

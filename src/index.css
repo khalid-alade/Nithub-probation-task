@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: white;
+  color: black;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+
+  --tw-gradient-stops: #3730A3, #312E81;
+  --muted: hsl(0, 0%, 100%, 0.6);
+  --primary: #3730A3;
+  --primary-muted: #EEF2FF;
+  --secondary: #4B5563;
+  --secondary-muted: #F3F4F6;
+
+  --dashboard-primary: #7C8DB5;
+  --dashboard-primary-muted: #E6EDFF;
+  --dashboard-secondary: #347AE2;
+  --alert: #FF3B30;
+}
+
+.dark {
+  --background-color: #1a202c;
+  --text-color: #ffffff;
+  --primary-color: #bb86fc;
+  --secondary-color: #03dac6;
+}
+
+.dashBoard {
+  box-sizing: border-box;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+th {
+  font-weight: 600;
+  font-size: small;
+  padding: 10px;
+  padding-top: 0;
+}
+
+td,
+tr {
+  padding: 10px;
+  text-align: left;
+  font-size: small;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+  /* Hide the scrollbar in Webkit-based browsers */
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+  /* Small width */
+  margin: 0;
+  /* No margin */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgba(100, 100, 100, 0.5);
+  /* Customize scrollbar thumb color */
+  border-radius: 10px;
+  /* Rounded scrollbar */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.1);
+  /* Customize scrollbar track color */
+}
+
+/* For Firefox */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  /* Small width */
+  scrollbar-color: rgba(100, 100, 100, 0.5) rgba(0, 0, 0, 0.1);
+  /* Thumb and track colors */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.spinner {
+  animation: spin 1s linear infinite;
+}
