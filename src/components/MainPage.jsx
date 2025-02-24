@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef, lazy, Suspense } from 'react';
 import Navbar from './Navbar';
 import { useContext } from "react";
 import { ThemeContext } from '../ThemeContext';
-// import Table from './Table';
 
 
 const Table = lazy(() => import('./Table'));

@@ -19,7 +19,6 @@ export default function Navbar() {
   return (
     <div className='mt-9 dark:text-white flex items-center justify-end pr-8'>
 
-      {/* <p onClick={toggleTheme} className='text-right pr-6 py-2 cursor-pointer'>Sun</p> */}
       {theme == 'light' ?
         <FiMoon size={28} className='cursor-pointer hover:fill-slate-300' onClick={toggleTheme} data-testid="theme-toggle" />
         :

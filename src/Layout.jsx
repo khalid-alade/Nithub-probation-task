@@ -3,7 +3,7 @@ import Sidebar from "./components/Sidebar";
 import MainPage from "./components/MainPage";
 import './index.css';
 
-const App = () => {
+const Layout = () => {
   return (
       <div className="flex">
         <Sidebar />
@@ -12,4 +12,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Layout;

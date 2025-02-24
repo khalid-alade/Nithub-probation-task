@@ -4,7 +4,7 @@ import { FaTruck, FaUser, FaUsers } from "react-icons/fa";
 export default function Sidebar() {
   return (
     <div className='hidden lg:block w-1/5 bg-white pt-9 px-6 fixed h-screen dark:bg-indigo-950'>
-      <p className='font-bold text-2xl mb-8 dark:text-white cursor-pointer'>Logistics Manager</p>
+      <p className='font-bold text-xl mb-8 dark:text-white cursor-pointer'>Logistics Manager</p>
       <div className='flex flex-col items-center justify-start'>
         <div className='w-full mb-3'>
           <p className='font-semibold text-sm text-gray-400'>primary</p>
