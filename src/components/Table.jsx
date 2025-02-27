@@ -25,7 +25,6 @@ export default function Table() {
         fetchData();
     }, []);
 
-    // WebSocket for real-time updates
     useEffect(() => {
         const ws = new WebSocket('wss://shipment-data-server.vercel.app/api/shipments');
 
@@ -37,7 +36,6 @@ export default function Table() {
             const message = JSON.parse(event.data);
 
             if (message.type === 'STATUS_UPDATE') {
-                // Update the status of the shipment in the data state
                 setData((prevData) =>
                     prevData.map((shipment) =>
                         shipment.id === message.data.id ? { ...shipment, status: message.data.status } : shipment
@@ -47,14 +45,15 @@ export default function Table() {
         };
 
         ws.onerror = (error) => {
-            console.error('WebSocket error:', error);
+            console.log('')
+            // console.error('WebSocket error:', error);
         };
 
         ws.onclose = () => {
-            console.log('WebSocket connection closed');
+            console.log('')
+            // console.log('WebSocket connection closed');
         };
 
-        // Cleanup on component unmount
         return () => ws.close();
     }, []);
 
